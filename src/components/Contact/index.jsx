@@ -1,42 +1,65 @@
 import React from 'react';
+import { Formik, Field } from 'formik';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
+    const handleFormSubmit = (values) => {
+        console.log("Logger: ", values)
+        if(!values.name){
+            toast.error("Name must not be empty");
+        }else if(!values.email){
+            toast.error("Email must not be empty");
+        }else if(!values.subject){
+            toast.error("Subject must not be empty");
+        }else if(!values.message){
+            toast.error("Message must not be empty");
+        }else{
+            toast.success("Message submitted");
+        }
+    }
     return (
         <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-8">
-                        <div class="contact-form">
-                            <div id="success"></div>
-                            <form name="sentMessage" id="contactForm">
-                                <div class="control-group">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                    <p class="help-block"></p>
-                                </div>
-                                <div class="control-group">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                    <p class="help-block"></p>
-                                </div>
-                                <div class="control-group">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                    <p class="help-block"></p>
-                                </div>
-                                <div class="control-group">
-                                    <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                    <p class="help-block"></p>
-                                </div>
-                                <div>
-                                    <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                </div>
-                            </form>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-8">
+                            <div class="contact-form">
+                                <div id="success"></div>
+                                <Formik
+                                    initialValues={{ name: "", email: "", subject: "", message: "" }}
+                                    onSubmit={handleFormSubmit}
+                                >
+                                    {(form) =><form onSubmit={form.handleSubmit}>
+                                        <div class="control-group">
+                                            <Field type="text" class="form-control" id="name" name="name" placeholder="Your Name" />
+                                            <p class="help-block"></p>
+                                        </div>
+                                        <div class="control-group">
+                                            <Field type="email" class="form-control" id="email" name="email" placeholder="Your Email" />
+                                            <p class="help-block"></p>
+                                        </div>
+                                        <div class="control-group">
+                                            <Field type="text" class="form-control" id="subject" name="subject" placeholder="Subject" />
+                                            <p class="help-block"></p>
+                                        </div>
+                                        <div class="control-group">
+                                            <Field as={"textarea"} class="form-control" id="message" placeholder="Message" name="message" />
+                                            <p class="help-block"></p>
+                                        </div>
+                                        <div>
+                                            <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                        </div>
+                                    </form>}
+                                </Formik>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </div>
-    </div>
     );
 }
 

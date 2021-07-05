@@ -16,8 +16,9 @@ function AcademicBackground() {
                         <i class="icon fas fa-graduation-cap"></i>
                         <div class="details">
                             <span class="title">RWTH Aachen University, Germany</span>
-                            <span>October 2020 - Present</span>
+                            <span><i>October 2020 - Present</i></span>
                         </div>
+                        <br />
                         <p>Masters of Science in <b>Computational Social Systems</b></p>
                     </section>
                 </div>
@@ -25,9 +26,10 @@ function AcademicBackground() {
                     <section>
                         <i class="icon fas fa-graduation-cap"></i>
                         <div class="details">
-                            <span class="title">American International University-Bangladesh (AIUB), Germany</span>
-                            <span>May 2016 - January 2020</span>
+                            <span class="title">American International University-Bangladesh (AIUB), Bangladesh</span>
+                            <span><i>May 2016 - January 2020</i></span>
                         </div>
+                        <br />
                         <p>Bachelor of Science in <b>Computer Science & Engineering</b></p>
                     </section>
                 </div>
