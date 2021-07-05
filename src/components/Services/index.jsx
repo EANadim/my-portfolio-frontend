@@ -4,7 +4,7 @@ function Services() {
     return (
         <div class="service" id="service">
             <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <div class="bg-colorful-section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <p>What I do</p>
                     <h2>Awesome Quality Services</h2>
                 </div>

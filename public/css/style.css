@@ -460,6 +460,10 @@ a:focus {
     font-size: 45px;
     font-weight: 700;
 }
+.bg-colorful-section-header {
+    position: relative;
+    margin-bottom: 45px;
+}
 
 .bg-colorful-section-header p {
     display: inline-block;
@@ -518,7 +522,7 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    padding: 45px 0 45px 0;
 }
 
 .about .col-lg-6 {
@@ -774,7 +778,9 @@ a:focus {
 .service {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    padding: 45px 0 45px 0;
+    background-color: #ef233c;
+    margin-bottom: 20px;
 }
 
 .service .service-item {
@@ -797,19 +803,20 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #EF233C;
-    background: #ffffff;
+    border: 1px solid #f2f2f2;
+    background: #EF233C;
 }
 
 .service .service-icon i {
     position: relative;
     font-size: 60px;
-    color: #EF233C;
+    color: #ffffff;
     transition: .3s;
 }
 
 .service .service-item:hover i {
     font-size: 75px;
+    color: #000000;
 }
 
 .service .service-text {
@@ -823,17 +830,19 @@ a:focus {
     font-size: 20px;
     font-weight: 600;
     transition: 1s;
+    color: #f2f2f2;
 }
 
 .service .service-text p {
     margin: 0;
     font-size: 16px;
     transition: 1s;
+    color: #f2f2f2;
 }
 
 .service .service-item:hover .service-text h3,
 .service .service-item:hover .service-text p {
-    color: #ffffff;
+    color: #000000;
 }
 
 @media (max-width: 575.98px) {
@@ -1238,7 +1247,7 @@ a:focus {
 .contact {
     position: relative;
     width: 100%;
-    margin: 45px 0;
+    margin: 45px 0 0 0;
     background: #EF233C;
 }
 
@@ -1397,7 +1406,7 @@ a:focus {
 /*******************************/
 .footer {
     position: relative;
-    margin-top: 45px;
+    /* margin-top: 45px; */
     background: #EF233C;
 }
 
