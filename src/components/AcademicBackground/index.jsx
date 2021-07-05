@@ -31,6 +31,7 @@ function AcademicBackground() {
                         </div>
                         <br />
                         <p>Bachelor of Science in <b>Computer Science & Engineering</b></p>
+                        <p><i><b>Cgpa: </b>1.2 in German scale</i></p>
                     </section>
                 </div>
             </div>
