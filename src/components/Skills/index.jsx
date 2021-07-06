@@ -2,6 +2,7 @@ import React from 'react';
 import ProgressBar from "@ramonak/react-progress-bar";
 
 function Skills() {
+    const basicColor = "#106a72"
     return (
         <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
             <div class="container-fluid">
@@ -19,15 +20,15 @@ function Skills() {
                                 <div class="skill-name">
                                     <p>React</p><p>80%</p>
                                 </div>
-                                <ProgressBar completed={80} bgColor={"#ef233c"}/>
+                                <ProgressBar completed={80} bgColor={basicColor}/>
                                 <div class="skill-name">
                                     <p>Angular</p><p>70%</p>
                                 </div>
-                                <ProgressBar completed={70} bgColor={"#ef233c"} />
+                                <ProgressBar completed={70} bgColor={basicColor} />
                                 <div class="skill-name">
                                     <p>Django</p><p>70%</p>
                                 </div>
-                                <ProgressBar completed={70} bgColor={"#ef233c"} />
+                                <ProgressBar completed={70} bgColor={basicColor} />
                             </div>
                         </div>
                     </div>
@@ -37,16 +38,16 @@ function Skills() {
                                 <div class="skill-name">
                                     <p>PostGres</p><p>60%</p>
                                 </div>
-                                <ProgressBar completed={60} bgColor={"#ef233c"} />
+                                <ProgressBar completed={60} bgColor={basicColor} />
 
                                 <div class="skill-name">
                                     <p>CSS</p><p>60%</p>
                                 </div>
-                                <ProgressBar completed={60} bgColor={"#ef233c"} />
+                                <ProgressBar completed={60} bgColor={basicColor} />
                                 <div class="skill-name">
                                     <p>Scrappy</p><p>50%</p>
                                 </div>
-                                <ProgressBar completed={50} bgColor={"#ef233c"} />
+                                <ProgressBar completed={50} bgColor={basicColor} />
                             </div>
                         </div>
                     </div>

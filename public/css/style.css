@@ -1,6 +1,9 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+:root {
+    --basicColor: #106a72;
+}
 body {
     color: #797979;
     background: #ffffff;
@@ -24,7 +27,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #EF233C;
+    color: var(--basicColor);
     outline: none;
     text-decoration: none;
 }
@@ -44,20 +47,20 @@ a:focus {
     font-weight: 600;
     letter-spacing: 1px;
     color: #ffffff;
-    background: #EF233C;
+    background: var(--basicColor);
     border: 2px solid transparent;
     border-radius: 0;
-    box-shadow: inset 0 0 0 50px #EF233C;
+    box-shadow: inset 0 0 0 50px var(--basicColor);
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
 }
 
 .btn:hover {
-    color: #EF233C;
+    color: var(--basicColor);
     background: transparent;
-    box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    box-shadow: inset 0 0 0 0 var(--basicColor);
+    border-color: var(--basicColor);
 }
 
 #loader {
@@ -91,7 +94,7 @@ a:focus {
     width: 45px;
     height: 45px;
     border: 5px solid #dddddd;
-    border-top: 5px solid #EF233C;
+    border-top: 5px solid var(--basicColor);
     border-radius: 50%;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
@@ -188,7 +191,7 @@ a:focus {
     }
     
     .navbar.nav-sticky .navbar-brand {
-        color: #EF233C;
+        color: var(--basicColor);
     }
 
     .navbar-light .navbar-nav .nav-link,
@@ -211,7 +214,7 @@ a:focus {
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
     .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-        color: #EF233C;
+        color: var(--basicColor);
     }
 }
 
@@ -222,7 +225,7 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #EF233C;
+        color: var(--basicColor);
     }
     
     .navbar .navbar-nav {
@@ -245,10 +248,10 @@ a:focus {
 .hero {
     position: relative;
     width: 100%;
-    margin-bottom: 45px;
-    padding: 120px 0 0 0;
+    /* margin-bottom: 45px; */
+    padding: 120px 0 45px 0;
     overflow: hidden;
-    background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(../img/hero-bg.jpg);
+    background: linear-gradient(#106a72f2, #363636f2), url(../img/hero-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -314,7 +317,7 @@ a:focus {
 
 .hero .hero-btn .btn {
     margin-top: 35px;
-    color: #EF233C;
+    color: var(--basicColor);
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -439,7 +442,7 @@ a:focus {
     top: 11px;
     right: 0;
     left: -30px;
-    background: #EF233C;
+    background: var(--basicColor);
     z-index: -1;
 }
 
@@ -450,7 +453,7 @@ a:focus {
     height: 3px;
     top: 11px;
     left: 3px;
-    background: #EF233C;
+    background: var(--basicColor);
     z-index: 1;
 }
 
@@ -459,6 +462,7 @@ a:focus {
     position: relative;
     font-size: 45px;
     font-weight: 700;
+    color: var(--basicColor);
 }
 .bg-colorful-section-header {
     position: relative;
@@ -475,7 +479,7 @@ a:focus {
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background: #EF233C;
+    background: var(--basicColor);
     color: #f2f2f2;
 }
 
@@ -580,7 +584,7 @@ a:focus {
 
 .about .progress .progress-bar {
     width: 0px;
-    background: #EF233C;
+    background: var(--basicColor);
     border-radius: 10px;
     transition: 2s;
 }
@@ -613,7 +617,7 @@ a:focus {
     content: '';
     position: absolute;
     width: 2px;
-    background: #EF233C;
+    background: var(--basicColor);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -645,7 +649,7 @@ a:focus {
     top: 48px;
     right: -8px;
     background: #ffffff;
-    border: 2px solid #EF233C;
+    border: 2px solid var(--basicColor);
     border-radius: 16px;
     z-index: 1;
 }
@@ -677,7 +681,7 @@ a:focus {
     top: 44px;
     font-size: 16px;
     font-weight: 600;
-    color: #EF233C;
+    color: var(--basicColor);
     text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
@@ -779,7 +783,7 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 45px 0 45px 0;
-    background-color: #ef233c;
+    background-color: var(--basicColor);
     margin-bottom: 20px;
 }
 
@@ -793,7 +797,7 @@ a:focus {
 }
 
 .service .service-item:hover {
-    box-shadow: inset 800px 0 0 0 #EF233C;
+    box-shadow: inset 800px 0 0 0 var(--basicColor);
 }
 
 .service .service-icon {
@@ -804,7 +808,7 @@ a:focus {
     align-items: center;
     justify-content: center;
     border: 1px solid #f2f2f2;
-    background: #EF233C;
+    background: var(--basicColor);
 }
 
 .service .service-icon i {
@@ -881,10 +885,10 @@ a:focus {
     font-size: 14px;
     font-weight: 600;
     color: #ffffff;
-    background: #EF233C;
+    background: var(--basicColor);
     border: 2px solid transparent;
     border-radius: 0;
-    box-shadow: inset 0 0 0 50px #EF233C;
+    box-shadow: inset 0 0 0 50px var(--basicColor);
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
@@ -892,10 +896,10 @@ a:focus {
 
 .portfolio #portfolio-filter li:hover,
 .portfolio #portfolio-filter li.filter-active {
-    color: #EF233C;
+    color: var(--basicColor);
     background: transparent;
-    box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    box-shadow: inset 0 0 0 0 var(--basicColor);
+    border-color: var(--basicColor);
 }
 
 .portfolio .portfolio-item {
@@ -957,10 +961,10 @@ a:focus {
 }
 
 .portfolio .portfolio-item:hover a.btn {
-    color: #EF233C;
+    color: var(--basicColor);
     background: transparent;
-    box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    box-shadow: inset 0 0 0 0 var(--basicColor);
+    border-color: var(--basicColor);
 }
 
 .technology-text {
@@ -968,7 +972,7 @@ a:focus {
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ef233c;
+    color: var(--basicColor);
 }
 
 
@@ -980,7 +984,7 @@ a:focus {
     width: 100%;
     margin: 45px 0;
     padding: 90px 0;
-    background: #EF233C;
+    background: var(--basicColor);
 }
 
 .banner .container {
@@ -1017,7 +1021,7 @@ a:focus {
 
 .banner .banner-text .btn {
     margin-top: 15px;
-    color: #EF233C;
+    color: var(--basicColor);
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -1069,7 +1073,7 @@ a:focus {
 }
 
 .team .team-text h2 {
-    color: #EF233C;
+    color: var(--basicColor);
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
@@ -1108,7 +1112,7 @@ a:focus {
 }
 
 .team .team-item:hover {
-    box-shadow: inset 800px 0 0 0 #EF233C;
+    box-shadow: inset 800px 0 0 0 var(--basicColor);
 }
 
 .team .team-item:hover .team-img img {
@@ -1158,7 +1162,7 @@ a:focus {
     position: relative;
     margin: 45px 0;
     padding: 90px 0;
-    background: #EF233C;
+    background: var(--basicColor);
 }
 
 .testimonial .container {
@@ -1210,7 +1214,7 @@ a:focus {
 }
 
 .testimonial .testimonial-text h3 {
-    color: #EF233C;
+    color: var(--basicColor);
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -1248,7 +1252,7 @@ a:focus {
     position: relative;
     width: 100%;
     margin: 45px 0 0 0;
-    background: #EF233C;
+    background: var(--basicColor);
 }
 
 .contact .container-fluid {
@@ -1259,7 +1263,7 @@ a:focus {
 .contact .contact-form {
     position: relative;
     padding: 90px 0 90px 45px;
-    background: #EF233C;
+    background: var(--basicColor);
 }
 
 .contact .contact-form input {
@@ -1293,7 +1297,7 @@ a:focus {
 
 .contact .contact-form .btn {
     margin-top: 35px;
-    color: #EF233C;
+    color: var(--basicColor);
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -1407,7 +1411,7 @@ a:focus {
 .footer {
     position: relative;
     /* margin-top: 45px; */
-    background: #EF233C;
+    background: var(--basicColor);
 }
 
 .footer .container-fluid {
@@ -1534,7 +1538,7 @@ a:focus {
 
 .tooltip {
     font-size: 20px !important;
-    background-color: #ef233c !important;
+    background-color: var(--basicColor) !important;
     width: 800px !important;
 }
 
@@ -1550,7 +1554,7 @@ a:focus {
     width: 100%;
     margin: 45px 0;
     padding: 90px 0;
-    background: #EF233C;
+    background: var(--basicColor);
 }
 
 ::selection{
@@ -1613,7 +1617,7 @@ a:focus {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #ff7979;
+  color: var(--basicColor);
   font-size: 17px;
   box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
 }
