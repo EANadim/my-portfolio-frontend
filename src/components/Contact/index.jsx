@@ -1,21 +1,33 @@
 import React from 'react';
 import { Formik, Field } from 'formik';
 import { ToastContainer, toast } from 'react-toastify';
+import * as emailjs from 'emailjs-com';
+import { EMAIL_JS_USER_ID, EMAIL_JS_TEMPLATE_ID, EMAIL_JS_SERVICE_ID } from '../../contents/constants';
 import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
     const handleFormSubmit = (values) => {
-        console.log("Logger: ", values)
-        if(!values.name){
+        if (!values.name) {
             toast.error("Name must not be empty");
-        }else if(!values.email){
+        } else if (!values.email) {
             toast.error("Email must not be empty");
-        }else if(!values.subject){
+        } else if (!values.subject) {
             toast.error("Subject must not be empty");
-        }else if(!values.message){
+        } else if (!values.message) {
             toast.error("Message must not be empty");
-        }else{
-            toast.success("Message submitted");
+        } else {
+            var templateParams = {
+                name: values.name,
+                email: values.email,
+                subject: values.subject,
+                message: values.message,
+            };
+            emailjs.send(EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, templateParams, EMAIL_JS_USER_ID)
+                .then(function (response) {
+                    toast.success("Message submitted");
+                }, function (error) {
+                    toast.error("Something went wrong. Please try again later");
+                });
         }
     }
     return (
@@ -31,7 +43,7 @@ function Contact() {
                                     initialValues={{ name: "", email: "", subject: "", message: "" }}
                                     onSubmit={handleFormSubmit}
                                 >
-                                    {(form) =><form onSubmit={form.handleSubmit}>
+                                    {(form) => <form onSubmit={form.handleSubmit}>
                                         <div class="control-group">
                                             <Field type="text" class="form-control" id="name" name="name" placeholder="Your Name" />
                                             <p class="help-block"></p>
