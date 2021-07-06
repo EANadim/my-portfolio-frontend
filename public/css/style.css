@@ -970,10 +970,13 @@ a:focus {
 
 .technology-text {
     position: absolute;
-    top: 90%;
+    top: 93%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--basicColor);
+    color: #f2f2f2;
+    background: var(--basicColor);
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -1257,7 +1260,7 @@ a:focus {
 }
 
 .contact .container-fluid {
-    background: url(../img/contact.png) left center no-repeat;
+    /* background: url(../img/contact.png) left center no-repeat; */
     background-size: contain;
 }
 
@@ -1327,6 +1330,9 @@ a:focus {
     .contact .contact-form {
         padding: 90px 0;
     }
+}
+.map-container {
+    padding-top: 35px;
 }
 
 

@@ -34,9 +34,11 @@ function Contact() {
         <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
             <div class="container-fluid">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-8">
+                    <div class="row align-items-center map-container">
+                        <div class="col-md-5">
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1LSpxpPRZNG0CdWKKDOqMM7hcprB-STwW" width="100%" height="480"></iframe>
+                        </div>
+                        <div class="col-md-7">
                             <div class="contact-form">
                                 <div id="success"></div>
                                 <Formik
