@@ -912,6 +912,10 @@ a:focus {
     width: 100%;
 }
 
+.portfolio-wrap:hover .technology-text{
+    font-size: 20px;
+}
+
 .portfolio .portfolio-img {
     position: relative;
     overflow: hidden;
@@ -977,6 +981,7 @@ a:focus {
     background: var(--basicColor);
     width: 100%;
     text-align: center;
+    padding-bottom: 15px;
 }
 
 
