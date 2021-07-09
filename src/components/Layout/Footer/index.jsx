@@ -9,8 +9,8 @@ function Footer() {
                         <h2>Ehtesham Ahmad Nadim</h2>
                         <h3>Shitalpur Upzilla Side, kaliganj, Satkhira, Bangladesh</h3>
                         <div class="footer-menu">
-                            <p>+8801711167333</p>
-                            <p>ehtesham.ahmad.nadim@gmail.com</p>
+                            <p style={{ fontSize: "15px" }}>+8801711167333</p>
+                            <p style={{ fontSize: "15px" }}>ehtesham.ahmad.nadim@gmail.com</p>
                         </div>
                         <div class="footer-social">
                             <a href="https://www.linkedin.com/in/ea-nadim/"><i class="fab fa-linkedin-in"></i></a>

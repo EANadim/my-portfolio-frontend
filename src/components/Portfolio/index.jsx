@@ -37,7 +37,10 @@ function Portfolio({ projects }) {
                     {filteredProjects.map(project => (
                         <div key={project.name} class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
                             <div class="portfolio-wrap">
-                                <div class="portfolio-img">
+                                <div class="portfolio-img" style={{ cursor: "pointer" }} onClick={() => {
+                                    const newWindow = window.open(project.url, '_blank', 'noopener,noreferrer')
+                                    if (newWindow) newWindow.opener = null
+                                }}>
                                     <img src={project.imgSrc} alt="Image" />
                                     <span className="technology-text"><b>{project.technologies.join(" | ")}</b></span>
                                 </div>
