@@ -14,6 +14,7 @@ function WorkingExperience() {
                             <div class="timeline-date">01 September, 2019 - 30 June, 2021</div>
                             <h2>Junior Software Engineer</h2>
                             <h4>Workspace Infotech Limited</h4>
+                            <h5>Dhaka, Bangladesh</h5>
                             {/* <p>
                                 Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
                             </p> */}
@@ -24,6 +25,7 @@ function WorkingExperience() {
                             <div class="timeline-date">01 May, 2019 - 31 August, 2019</div>
                             <h2>Software Engineer Intern</h2>
                             <h4>Workspace Infotech Limited</h4>
+                            <h5>Dhaka, Bangladesh</h5>
                             {/* <p>
                                 Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
                             </p> */}

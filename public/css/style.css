@@ -718,8 +718,14 @@ a:focus {
 }
 
 .experience .timeline .timeline-text h4 {
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
     font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+.experience .timeline .timeline-text h5 {
+    margin: 0 0 8px 0;
+    font-size: 14px;
     font-style: italic;
     font-weight: 400;
 }
@@ -1699,4 +1705,22 @@ a:focus {
   .wrapper .row{
     margin: 10px 0;
   }
+}
+.award {
+    list-style: square !important;
+}
+.MuiTreeItem-root.Mui-selected > .MuiTreeItem-content .MuiTreeItem-label {
+    background-color: #fff !important;
+}
+.MuiTreeItem-group {
+	margin: 0 !important;
+	padding: 0 !important;
+	margin-left: 40px !important;
+}
+.MuiTreeItem-content {
+	width: 100%;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
 }

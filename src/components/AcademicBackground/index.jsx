@@ -1,6 +1,10 @@
 import React from 'react';
+import TreeView from '@material-ui/lab/TreeView';
+import TreeItem from '@material-ui/lab/TreeItem';
+import useStyles from './styles';
 
 function AcademicBackground() {
+    const classes = useStyles();
     return (
         <div class="academic-background" data-wow-delay="0.1s">
             <header class="bg-colorful-section-header text-center" data-wow-delay="0.1s">
@@ -32,6 +36,20 @@ function AcademicBackground() {
                         <br />
                         <p>Bachelor of Science in <b>Computer Science & Engineering</b></p>
                         <p><i><b>Cgpa: </b>1.2 in German scale</i></p>
+                        <TreeView
+                            className={classes.root}
+                            expanded={["1"]}
+                            defaultCollapseIcon={<i className={"fa fa-trophy"}></i>}
+                            defaultExpandIcon={<i className={"fa fa-trophy"}></i>}
+                        >
+                            <TreeItem className={"root-award"} nodeId="1" label={<b>Achievements</b>}>
+                                <TreeItem className={"award"} nodeId="2" label="Awarded Magna Cum Laude distinction in 19th convocation" />
+                                <TreeItem className={"award"} nodeId="3" label="Awarded Dean's List Honor for Fall Semester 2018-19" />
+                                <TreeItem className={"award"} nodeId="4" label="Awarded Dean's List Honor for Spring Semester 2016-17" />
+                                <TreeItem className={"award"} nodeId="5" label="Awarded Dean's List Honor for Fall Semester 2016-17" />
+                                <TreeItem className={"award"} nodeId="6" label="Awarded academic scholarship for outstanding results" />
+                            </TreeItem>
+                        </TreeView>
                     </section>
                 </div>
             </div>
